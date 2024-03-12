@@ -31,11 +31,6 @@ public class LandingPageStepDef {
 	@Given("User is on GreenCartLandingPage")
 	public void user_is_on_green_cart_landing_page() {
 
-		txtContSetup.driver = new ChromeDriver();
-		txtContSetup.driver.get("https://rahulshettyacademy.com/seleniumPractise/#/\r\n"
-				+ "\r\n"
-				+ "");
-		txtContSetup.driver.manage().window().maximize();
 	}
 
 	@When("user searched shortname {string} and extract actual name of product")

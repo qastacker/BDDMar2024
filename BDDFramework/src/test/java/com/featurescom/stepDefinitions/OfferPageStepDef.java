@@ -38,17 +38,13 @@ public class OfferPageStepDef {
 		// Write code here that turns the phrase above into concrete actions
 		switchToOfferPage();
 		op.searchItem(shortName);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		offerPageProdName = op.getProdName();
 	}
 	
 	public void switchToOfferPage() {
 		lp.selectTopDealPage();
-		Set<String> s1 = txtContSetup.driver.getWindowHandles();
-		Iterator<String> i1 = s1.iterator();
-		String parentWIn = i1.next();
-		String childWin = i1.next();
-		txtContSetup.driver.switchTo().window(childWin);
+		txtContSetup.genUtils.SwitchToChildWindow();
 	}
 
 	@Then("validate product name in offer page matches the landing page")

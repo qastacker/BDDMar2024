@@ -8,7 +8,7 @@ public class OfferPage {
 	public WebDriver driver;
 
 	By search = By.xpath("//input[@type='search']");
-	By prodName = By.cssSelector("h4.product-name");
+	By prodName = By.cssSelector("tr td:nth-child(1)");
 
 	public OfferPage(WebDriver driver) {
 		this.driver = driver;
