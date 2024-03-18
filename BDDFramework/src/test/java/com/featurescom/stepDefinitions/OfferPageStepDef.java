@@ -29,11 +29,11 @@ public class OfferPageStepDef {
 
 	public OfferPageStepDef(TextContentSetup txtContSetup){
 		this.txtContSetup=txtContSetup;
-		op = txtContSetup.pom.getOfferPage();
-		lp = txtContSetup.pom.getLandingPage();
+		this.op = txtContSetup.pom.getOfferPage();
+		this.lp = txtContSetup.pom.getLandingPage();
 	}
 
-	@Then("user searched for {string} shortname in offer page")
+	@Then("^user searched for (.+) shortname in offer page$")
 	public void user_searched_for_same_shortname_in_offer_page(String shortName) throws Exception {
 		// Write code here that turns the phrase above into concrete actions
 		switchToOfferPage();

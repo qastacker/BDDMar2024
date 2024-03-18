@@ -2,6 +2,7 @@ package com.Utils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,7 @@ public class TestBase {
 		}else if(browser.equalsIgnoreCase("firefox")) {
 			driver= new FirefoxDriver();
 		}
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(url);
 		driver.manage().window().maximize();
 		}
