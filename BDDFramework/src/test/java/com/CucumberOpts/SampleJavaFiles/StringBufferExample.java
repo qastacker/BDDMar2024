@@ -1,4 +1,4 @@
-package com.CucumberOpts;
+package com.CucumberOpts.SampleJavaFiles;
 
 import java.io.BufferedReader;
 import java.util.Scanner;

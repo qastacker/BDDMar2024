@@ -27,7 +27,7 @@ public class TestBase {
 		}else if(browser.equalsIgnoreCase("firefox")) {
 			driver= new FirefoxDriver();
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
 		driver.manage().window().maximize();
 		}
