@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 				,glue="com.featurescom.stepDefinitions"
 				,monochrome=true
 				,dryRun=false
-				//,tags="@PlaceOrder"
+				,tags="@PlaceOrder or @OffersPage"
 				,plugin= {
 					"html:target/cucumber.html"
 					,"json:target/cucumber.json"
