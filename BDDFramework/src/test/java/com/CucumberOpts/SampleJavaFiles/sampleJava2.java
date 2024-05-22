@@ -12,7 +12,7 @@ public class sampleJava2 {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		System.out.println(sdf.format(new java.util.Date()));
 		System.out.println(" string: "+sdf.toString());
-		System.out.println(" string: "+sdf.toString());
+
 	}
 
 }
